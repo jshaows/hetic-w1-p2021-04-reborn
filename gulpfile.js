@@ -57,3 +57,5 @@ function serve(done) {
 exports.dev = series(parallel(html, css, js, images, fonts), serve, () =>
   watch(['src/**/**/*'], series(parallel(html, css, js, images, fonts), reload))
 );
+
+exports.build = parallel(html, css, js, images, fonts);
