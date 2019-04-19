@@ -1,4 +1,4 @@
-mixin comparate(image1, image2, text1, text2, text3, text4, text5, text6)
+mixin comparate(image1, image2, text1, text2, text3, text4, text5)
   .comparate
     img(src='assets/images/'+image1, alt=image1).planet
     img(src='assets/images/'+image2, alt=image2)
@@ -9,22 +9,20 @@ mixin comparate(image1, image2, text1, text2, text3, text4, text5, text6)
       p Pauvreté
       span=text2
     .comparate__text
-      p Qualité de l'air
+      p Pollution de l'air
       span=text3
     .comparate__text
       p Gravité
       span=text4
     .comparate__text
-      p Niveau de vie
+      p Qualité de vie
       span=text5
-    .comparate__text
-      p Criminalité
-      span=text6
 
-mixin article(text1, text2, text3, text4)
+mixin article(text1, text2, text3, text4, text5)
   .article
     .section__article
       h2.article__title.article__title--small= text1
       h1.article__title.article__title--large= text2
     h1= text3
     p= text4
+    span.btn=text5
