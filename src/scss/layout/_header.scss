@@ -18,6 +18,9 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+    &:hover{
+      color: #F3AE46;
+    }
   }
 }
 
@@ -30,4 +33,13 @@ header {
   z-index: 999;
   justify-content: center;
   align-items: flex-end;
+  p{
+    text-transform: uppercase;
+    span{
+      color: #F3AE46
+    }
+  }
+  &>span{
+    font-size: 25px;
+  }
 }

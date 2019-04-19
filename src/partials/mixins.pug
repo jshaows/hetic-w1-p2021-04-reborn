@@ -1,6 +1,6 @@
 mixin comparate(image1, image2, text1, text2, text3, text4, text5, text6)
   .comparate
-    img(src='assets/images/'+image1, alt=image1)
+    img(src='assets/images/'+image1, alt=image1).planet
     img(src='assets/images/'+image2, alt=image2)
     .comparate__text
       p Population
@@ -21,9 +21,10 @@ mixin comparate(image1, image2, text1, text2, text3, text4, text5, text6)
       p Criminalité
       span=text6
 
-mixin article(text1, text2, text3)
+mixin article(text1, text2, text3, text4)
   .article
     .section__article
       h2.article__title.article__title--small= text1
       h1.article__title.article__title--large= text2
-    p= text3
+    h1= text3
+    p= text4

@@ -12,17 +12,17 @@ html(lang="fr")
         span habitat
       h1.p-hero__title.p-hero__title--large Pour une nouvelle 
         span vie
-      a(href="#marsha") Découvrir
+      a(href="#marsha").btn Découvrir
     section.marsha__section#marsha
       h2.p-section__title.p-section__title--small Visitez votre nouvel habitat
       h1.p-section__title.p-section__title--large Marsha
       .model
         .model__button
-          button(onclick='SelectMenu({index: 1})') Découvrir
-          button(onclick='SelectMenu({index: 2})') Extérieur
-          button(onclick='SelectMenu({index: 3})') Intérieur
-          button(onclick='SelectMenu({index: 4})') Pièces
-          button(onclick='SelectMenu({index: 5})') Protection
+          button(onclick='SelectMenu({index: 1})').btn Découvrir
+          button(onclick='SelectMenu({index: 2})').btn Extérieur
+          button(onclick='SelectMenu({index: 3})').btn Intérieur
+          button(onclick='SelectMenu({index: 4})').btn Pièces
+          button(onclick='SelectMenu({index: 5})').btn Protection        
         .model__content#gameContainer
     section.marsha__section
       .marsha__article

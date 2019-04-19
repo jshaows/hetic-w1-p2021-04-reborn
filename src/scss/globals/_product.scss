@@ -32,6 +32,7 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    z-index: 999;
 
     &--small {
       margin: -20vh 0 0 0;
@@ -51,12 +52,6 @@
     position: absolute;
     bottom: 20vh;
     z-index: 999;
-    border: 1px solid #F3AE46;
-    padding: 10px 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #F3AE46;
-    text-decoration: none;
   }
 }
 
@@ -65,24 +60,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 
   &__button {
     button {
       margin: 0 30px 50px 0;
-      background-color: #f3ae46;
-      border: none;
-      padding: 8px 15px;
-      font-weight: bold;
-      color: #ffffff;
-      text-transform: uppercase;
-      border-radius: 10px;
+      background: none;
+      cursor: pointer;
     }
   }
 
   &__content {
-    width: 60vw;
     height: 70vh;
+    width: 60vw;
     background-color: #fff;
   }
 }
@@ -97,10 +87,12 @@
 
     &--small {
       font-size: 30px;
+      color: #F3AE46;
     }
 
     &--large {
       font-size: 60px;
+      margin: 20px 0 0 0;
     }
   }
 }
@@ -109,6 +101,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
 
   img {
     width: 400px;
@@ -145,6 +139,8 @@
 .m-article {
   display: flex;
   justify-content: space-evenly;
+  max-width: 1280px;
+  margin: 0 auto;
 
   .marsha__article__pico {
     text-align: center;
