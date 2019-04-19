@@ -30,6 +30,7 @@
   &__title {
     text-transform: uppercase;
     font-weight: bold;
+    z-index: 999;
 
     &--small {
       font-size: 35px;
