@@ -144,6 +144,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 50px 0;
 
   &:nth-child(1) .section__article {
     background: url('/assets/images/article1.jpg') center no-repeat;
@@ -184,7 +185,6 @@
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
-    margin: 0 0 100px 0;
     color: #f3ae46;
   }
 }
