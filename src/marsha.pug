@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    include partials/head.pug
+    title Marsha — Reborn
+    script(defer,src="js/UnityLoader.js")
+    script(defer,src="js/index.js")
+  body
+    include partials/header.pug
+    section.product__hero
+      h2.p-hero__title.p-hero__title--small Un nouvel 
+        span habitat
+      h1.p-hero__title.p-hero__title--large Pour une nouvelle 
+        span vie
+      a(href="#marsha") Découvrir
+    section.marsha__section#marsha
+      h2.p-section__title.p-section__title--small Visitez votre nouvel habitat
+      h1.p-section__title.p-section__title--large Marsha
+      .model
+        .model__button
+          button(onclick='SelectMenu({index: 1})') Découvrir
+          button(onclick='SelectMenu({index: 2})') Extérieur
+          button(onclick='SelectMenu({index: 3})') Intérieur
+          button(onclick='SelectMenu({index: 4})') Pièces
+          button(onclick='SelectMenu({index: 5})') Protection
+        .model__content#gameContainer
+    section.marsha__section
+      .marsha__article
+        img(src='assets/images/masha1.jpg', alt='')
+        .m-article__text
+          h1 Double coquille
+          p
+            | MARSHA utilise un système unique à double coque pour isoler les espaces habitables de la dilatation et de
+            | la contraction naturelles causées par les variations extrêmes de température sur Mars. En conséquence,
+            | l’intérieur est libre d’être léger, aérien, hautement optimisé en termes de masse et humain : une toute
+            | petite bulle de la Terre dans un monde lointain.
+      .marsha__article
+        .m-article__text
+          h1 Lumière maritime circadienne
+          p
+            | Recréer la lumière terrestre pour la santé mentale
+            | La lumière naturelle indirecte provenant de la grande lucarne remplie d'eau et des fenêtres intermittentes
+            | inonde l'intérieur tout en protégeant l'équipage des rayonnements nocifs solaires et cosmiques. L’éclairage
+            | circadien, conçu pour recréer la lumière terrestre, est utilisé pour optimiser la santé de l’équipage.
+        img.marsha__gif(src='assets/images/marsha.gif', alt='')
+    section.marsha__section
+      .m-article
+        .marsha__article__pico
+          h1 Super solide
+          p
+            | La fibre de basalte est connue pour sa superbe résistance à la traction. Il est comparable à la fibre de
+            | carbone et au kevlar mais est beaucoup plus simple à produire.
+        .marsha__article__pico
+          h1 Dimensionnellement stable
+          p
+            | Le PLA a le coefficient de dilatation thermique le plus faible parmi les plastiques, ce qui est essentiel
+            | pour obtenir une action composite avec la fibre de basalte coupée, qui est également très stable.
+        .marsha__article__pico
+          h1 Mission renouvelable
+          p
+            | Le PLA est un thermoplastique solide qui est recyclable et qui présente l’avantage supplémentaire d’une
+            | fabrication in situ.
+      .m-article
+        .marsha__article__pico
+          h1 Non toxique
+          p
+            | En tant que bioplastique, les émissions provenant de l’impression PLA sont bénignes, contrairement aux
+            | plastiques pétrochimiques qui émettent de grandes quantités de microparticules toxiques telles que le
+            | styrène.
+        .marsha__article__pico
+          h1 Non conduductrice
+          p
+            | Le PLA est prisé pour sa faible conductivité et le basalte compte parmi les isolants les plus efficaces
+            | connus. Ensemble, ils protègent contre l'environnement extérieur extrême.
+    include partials/footer.pug

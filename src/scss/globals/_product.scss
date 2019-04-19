@@ -1,0 +1,170 @@
+.product__hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('/assets/images/marsha-hero.jpg') center no-repeat;
+  background-size: cover;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    height: 50vh;
+    width: 100vw;
+  }
+
+  &::before {
+    top: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .7), transparent);
+  }
+
+  &::after {
+    bottom: -2px;
+    background: linear-gradient(180deg, #000, transparent);
+    transform: rotate(180deg)
+  }
+
+  .p-hero__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+    &--small {
+      margin: -20vh 0 0 0;
+      font-size: 48px;
+    }
+
+    &--large {
+      font-size: 74px;
+    }
+
+    span {
+      color: #f3ae46
+    }
+  }
+
+  a {
+    position: absolute;
+    bottom: 20vh;
+    z-index: 999;
+    border: 1px solid #F3AE46;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #F3AE46;
+    text-decoration: none;
+  }
+}
+
+.model {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    button {
+      margin: 0 30px 50px 0;
+      background-color: #f3ae46;
+      border: none;
+      padding: 8px 15px;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-radius: 10px;
+    }
+  }
+
+  &__content {
+    width: 60vw;
+    height: 70vh;
+    background-color: #fff;
+  }
+}
+
+.marsha__section {
+  padding: 50px 0 100px 0;
+
+  .p-section__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &--small {
+      font-size: 30px;
+    }
+
+    &--large {
+      font-size: 60px;
+    }
+  }
+}
+
+.marsha__article {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .marsha__gif {
+    position: relative;
+    object-fit: cover;
+    padding: 4px;
+    border: 1px solid #F3AE46;
+  }
+
+  .m-article__text {
+    width: 35%;
+
+    h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 300; //heavy
+      color: #F3AE46;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      margin: 20px 0 0 0;
+      line-height: 2;
+    }
+  }
+}
+
+.m-article {
+  display: flex;
+  justify-content: space-evenly;
+
+  .marsha__article__pico {
+    text-align: center;
+    width: 20%;
+
+    &:not(:last-child) {
+      margin: 0 0 100px 0;
+    }
+
+    h1 {
+      color: #F3AE46;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 20px 0 0 0;
+      line-height: 1.5;
+    }
+  }
+
+}

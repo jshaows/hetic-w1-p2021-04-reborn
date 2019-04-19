@@ -1,3 +1,7 @@
-body {
-  background-color: brown;
-}
+@import 'helpers/reset';
+@import 'helpers/typrography';
+@import 'layout/base';
+@import 'layout/header';
+@import 'globals/home';
+@import 'globals/product';
+@import 'layout/footer';
